@@ -38,6 +38,28 @@ function api_v1_homepage_partial_update(action) {
 function api_v1_login_create(action) {
   return alineMobileOctAPI.post(`/api/v1/login/`)
 }
+function api_v1_product_list(action) {
+  return alineMobileOctAPI.get(`/api/v1/product/`)
+}
+function api_v1_product_create(action) {
+  return alineMobileOctAPI.post(`/api/v1/product/`, { data: action.data })
+}
+function api_v1_product_read(action) {
+  return alineMobileOctAPI.get(`/api/v1/product/${action.id}/`)
+}
+function api_v1_product_update(action) {
+  return alineMobileOctAPI.put(`/api/v1/product/${action.id}/`, {
+    data: action.data
+  })
+}
+function api_v1_product_partial_update(action) {
+  return alineMobileOctAPI.patch(`/api/v1/product/${action.id}/`, {
+    data: action.data
+  })
+}
+function api_v1_product_delete(action) {
+  return alineMobileOctAPI.delete(`/api/v1/product/${action.id}/`)
+}
 function api_v1_signup_create(action) {
   return alineMobileOctAPI.post(`/api/v1/signup/`, { data: action.data })
 }
@@ -94,6 +116,12 @@ export const apiService = {
   api_v1_homepage_update,
   api_v1_homepage_partial_update,
   api_v1_login_create,
+  api_v1_product_list,
+  api_v1_product_create,
+  api_v1_product_read,
+  api_v1_product_update,
+  api_v1_product_partial_update,
+  api_v1_product_delete,
   api_v1_signup_create,
   rest_auth_login_create,
   rest_auth_logout_list,

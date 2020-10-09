@@ -356,3 +356,80 @@ export const rest_auth_user_partial_updateFailed = (error, starter) => ({
   error,
   starter
 })
+export const api_v1_product_list = () => ({ type: types.API_V1_PRODUCT_LIST })
+export const api_v1_product_listSucceeded = (response, starter) => ({
+  type: types.API_V1_PRODUCT_LIST_SUCCEEDED,
+  response,
+  starter
+})
+export const api_v1_product_listFailed = (error, starter) => ({
+  type: types.API_V1_PRODUCT_LIST_FAILED,
+  error,
+  starter
+})
+export const api_v1_product_create = data => ({
+  type: types.API_V1_PRODUCT_CREATE,
+  data
+})
+export const api_v1_product_createSucceeded = (response, starter) => ({
+  type: types.API_V1_PRODUCT_CREATE_SUCCEEDED,
+  response,
+  starter
+})
+export const api_v1_product_createFailed = (error, starter) => ({
+  type: types.API_V1_PRODUCT_CREATE_FAILED,
+  error,
+  starter
+})
+export const api_v1_product_read = () => ({ type: types.API_V1_PRODUCT_READ })
+export const api_v1_product_readSucceeded = (response, starter) => ({
+  type: types.API_V1_PRODUCT_READ_SUCCEEDED,
+  response,
+  starter
+})
+export const api_v1_product_readFailed = (error, starter) => ({
+  type: types.API_V1_PRODUCT_READ_FAILED,
+  error,
+  starter
+})
+export const api_v1_product_update = data => ({
+  type: types.API_V1_PRODUCT_UPDATE,
+  data
+})
+export const api_v1_product_updateSucceeded = (response, starter) => ({
+  type: types.API_V1_PRODUCT_UPDATE_SUCCEEDED,
+  response,
+  starter
+})
+export const api_v1_product_updateFailed = (error, starter) => ({
+  type: types.API_V1_PRODUCT_UPDATE_FAILED,
+  error,
+  starter
+})
+export const api_v1_product_partial_update = data => ({
+  type: types.API_V1_PRODUCT_PARTIAL_UPDATE,
+  data
+})
+export const api_v1_product_partial_updateSucceeded = (response, starter) => ({
+  type: types.API_V1_PRODUCT_PARTIAL_UPDATE_SUCCEEDED,
+  response,
+  starter
+})
+export const api_v1_product_partial_updateFailed = (error, starter) => ({
+  type: types.API_V1_PRODUCT_PARTIAL_UPDATE_FAILED,
+  error,
+  starter
+})
+export const api_v1_product_delete = () => ({
+  type: types.API_V1_PRODUCT_DELETE
+})
+export const api_v1_product_deleteSucceeded = (response, starter) => ({
+  type: types.API_V1_PRODUCT_DELETE_SUCCEEDED,
+  response,
+  starter
+})
+export const api_v1_product_deleteFailed = (error, starter) => ({
+  type: types.API_V1_PRODUCT_DELETE_FAILED,
+  error,
+  starter
+})
