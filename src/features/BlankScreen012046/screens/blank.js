@@ -40,7 +40,7 @@ export default class Blank extends React.Component {
         thumbTintColor="#9e62f9"
       />
       <Button
-        title="Press me Updated!"
+        title="Press me Updated!!!"
         color="#9e62f9"
         style={styles.Button_5}
         onPress={() => alert("Pressed!")}
@@ -444,6 +444,11 @@ const styles = StyleSheet.create({
     letterSpacing: 0,
     height: 20
   },
+
+  View_1: {},
+  CheckBox_15: {},
+  Slider_12: {},
+  Button_5: { height: 20, color: "#ffffff" },
   View_1: {},
   CheckBox_15: {},
   Slider_12: {},
