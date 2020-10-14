@@ -27,8 +27,12 @@ export default class Blank extends React.Component {
 
   render = () => (
     <View>
-      <Text style={styles.Text_7}>Sample text content 3333</Text>
-      <Button title="Press me Updated!" onPress={() => alert("Pressed!")} />
+      <Text>Sample text content 3333</Text>
+      <Button
+        title="Press me Updated!"
+        color="#ca57ff"
+        onPress={() => this.props.navigation.navigate("BlankScreen012046")}
+      />
     </View>
   )
 }
@@ -55,5 +59,8 @@ const styles = StyleSheet.create({
   Button_5: { color: "#ffffff" },
   View_1: {},
   Text_7: { color: "#ff0000" },
+  Button_5: {},
+  View_1: {},
+  Text_7: {},
   Button_5: {}
 })
