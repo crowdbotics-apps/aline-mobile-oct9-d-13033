@@ -26,11 +26,9 @@ export default class Blank extends React.Component {
   state = { CheckBox_15: true }
 
   render = () => (
-    <View style={styles.View_1}>
+    <View>
       <CheckBox
         title="The checkbox wont work properly"
-        disabled={false}
-        containerStyle={styles.CheckBox_15}
         checked={this.state.CheckBox_15}
         onPress={nextChecked => this.setState({ CheckBox_15: nextChecked })}
       />
@@ -38,15 +36,11 @@ export default class Blank extends React.Component {
         value={50}
         minimumValue={0}
         maximumValue={100}
-        step={1}
-        disabled={false}
-        maximumTrackTintColor="#E4E7ED"
         minimumTrackTintColor="#9e62f9"
         thumbTintColor="#9e62f9"
-        style={styles.Slider_12}
       />
       <Button
-        title="Press me!"
+        title="Press me Updated!"
         color="#9e62f9"
         style={styles.Button_5}
         onPress={() => alert("Pressed!")}
@@ -341,6 +335,7 @@ const styles = StyleSheet.create({
     letterSpacing: 0,
     height: 20
   },
+
   View_1: {
     marginLeft: 0,
     marginRight: 0,
@@ -370,6 +365,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 0,
     borderRadius: 0
   },
+
   CheckBox_15: {
     marginLeft: 0,
     marginRight: 0,
@@ -395,6 +391,7 @@ const styles = StyleSheet.create({
     lineHeight: 12,
     letterSpacing: 0
   },
+
   Slider_12: {
     marginLeft: 0,
     marginRight: 0,
@@ -414,6 +411,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 0,
     borderRadius: 0
   },
+
   Button_5: {
     width: "100%",
     marginLeft: 0,
@@ -445,5 +443,9 @@ const styles = StyleSheet.create({
     lineHeight: 12,
     letterSpacing: 0,
     height: 20
-  }
+  },
+  View_1: {},
+  CheckBox_15: {},
+  Slider_12: {},
+  Button_5: { height: 20, color: "#ffffff" }
 })
